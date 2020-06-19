@@ -26,6 +26,8 @@
     ],
     "clang.completion.enable": true,
     "files.associations": {
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "cmath": "cpp"
     } // 效果效果比cpptools要好
 }
