@@ -28,6 +28,7 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "*.tcc": "cpp"
     } // 效果效果比cpptools要好
 }
