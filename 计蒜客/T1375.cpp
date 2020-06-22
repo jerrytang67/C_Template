@@ -1,26 +1,28 @@
+#include <cstdio>
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 int main()
 {
     long long n;
     cin >> n;
-    int i, j, k, result = 0;
-    for (i = 0; i <= n; i += 3)
-        for (j = 0; j <= n; j++)
-        {
-            k = n - i - j;
-            if ( i / 3 +  3 * j + 5 * k  == n)
-            {
-                result++;
-            }
-        }
-
-    if (result > 0)
+    long long x, y, z;
+    int count = 0;
+    if (n % 4 != 0)
     {
-        printf("%d", result);
+        cout << "No Answer." << endl;
+        return 0;
     }
-    else
+
+    for (long long k = 0; k <= n / 28; k++)
+    {
+        x = 4 * k;
+        y = n / 4 - 7 * k;
+        z = n / 4 * 3 + 3 * k;
+        count++;
+        cout << x << " " << y << " " << z << endl;
+    }
+
+    if (count == 0)
     {
         cout << "No Answer." << endl;
     }
