@@ -5,7 +5,8 @@
             "intelliSenseMode": "clang-x64",
             "compilerPath": "C:/Program Files/LLVM/bin/gcc.exe",
             "includePath": [
-                "${workspaceFolder}"
+                "${workspaceFolder}",
+                "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"
             ],
             "defines": [],
             "browse": {

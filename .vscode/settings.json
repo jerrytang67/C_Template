@@ -1,8 +1,7 @@
 {
     "files.defaultLanguage": "cpp", // ctrl+N新建文件后默认的语言
     "editor.formatOnType": true, // 输入时就进行格式化，默认触发字符较少，分号可以触发
-    "editor.snippetSuggestions": "top", // snippets代码优先显示补全
-    "code-runner.runInTerminal": true, // 设置成false会在“输出”中输出，无法输入
+    "editor.snippetSuggestions": "top", // 设置成false会在“输出”中输出，无法输入
     "code-runner.executorMap": {
         "c": "cd $dir && clang $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c11 && $dir$fileNameWithoutExt",
         "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt.exe -Wall -g -Og -static-libgcc -fcolor-diagnostics --target=x86_64-w64-mingw -std=c++17 && $dir$fileNameWithoutExt"
@@ -17,7 +16,8 @@
     "clang.cflags": [ // 控制c语言静态检测的参数
         "--target=x86_64-w64-mingw",
         "-std=c11",
-        "-Wall"
+        "-Wall",
+        "-IC:/Program Files/LLVM"
     ],
     "clang.cxxflags": [ // 控制c++静态检测时的参数
         "--target=x86_64-w64-mingw",
@@ -29,6 +29,9 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "cmath": "cpp",
-        "*.tcc": "cpp"
-    } // 效果效果比cpptools要好
+        "*.tcc": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp"
+    },
+    "code-runner.runInTerminal": true // 效果效果比cpptools要好
 }
