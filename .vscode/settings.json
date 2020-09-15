@@ -13,6 +13,9 @@
     "C_Cpp.intelliSenseEngine": "Default", // 可以为Default或Tag Parser，后者较老，功能较简单。具体差别参考cpptools扩展文档
     "C_Cpp.errorSquiggles": "Disabled", // 因为有clang的lint，所以关掉
     "C_Cpp.autocomplete": "Disabled", // 因为有clang的补全，所以关掉
+    "C_Cpp.default.includePath": [
+        "C:/Program Files/LLVM/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits"
+    ],
     "clang.cflags": [ // 控制c语言静态检测的参数
         "--target=x86_64-w64-mingw",
         "-std=c11",
@@ -31,7 +34,8 @@
         "cmath": "cpp",
         "*.tcc": "cpp",
         "algorithm": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "random": "cpp"
     },
     "code-runner.runInTerminal": true // 效果效果比cpptools要好
 }
